@@ -1,0 +1,179 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(Fonts/OpenSans-SemiBold.ttf);
+}
+body{
+    background-color: #3949AB;
+    display: flex;
+    justify-content: center;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    transition: 0.5s;
+}
+body .img-fon{
+    position: absolute;
+    top: 450px;
+    left: 9%;
+    width: 12%;
+    transition: 1s;
+    z-index: 0;
+}body .img-fon2{
+     position: absolute;
+     top: 900px;
+     left: 65.5%;
+     width: 11%;
+     transition: 1s;
+     z-index: 0;
+ }
+
+.window{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 70%;
+    height: 600px;
+    z-index: 1;
+}
+.window .left{
+    border: 1px solid #E6E9FA;
+    border-radius: 20px 0px 0px 20px;
+    border-right: 0px;
+    background-color: rgba(57, 73, 171, 0.5);
+    z-index: 6;
+    backdrop-filter: blur(10px);
+    width: 60%;
+}
+.window .left header .img-left-header{
+    width: 25%;
+    margin: 45px 0 0 55px;
+}
+.window .left main .art{
+    width: 80%;
+    margin-top: 100px;
+}
+.window .left main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.window .left main .art-div{
+    display: flex;
+    justify-content: center;
+}
+.window .left main .art-place{
+    text-align: center;
+}
+.window .left main .art-place h2{
+    margin: 20px 0 10px 0;
+    font-family: OpenSans-SemiBold;
+    font-size: 22px;
+    color: white;
+}
+.window .left main .art-place p{
+    margin: 0;
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: white;
+}
+.window .left main .switches{
+    display: flex;
+    align-items: center;
+    margin: 40px 0 100px 0;
+}
+.window .left main .switches img{
+    margin-left: 7px;
+    width: 15px;
+}
+.window .left main .switches .selected{
+    width: 22px;
+}
+.window .right{
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transition: 0.5s;
+}
+.window .right .registration{
+    width: 70%;
+    margin-top: 6px;
+    transition: 1s;
+}
+.window .right h1{
+    margin: 120px 0 50px 0;
+    color: rgba(52, 52, 52, 1);
+    font-family: OpenSans-SemiBold;
+    font-size: 26px;
+}
+.window .right .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.window .right .form .input{
+    width: 85%;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    margin-top:14px;
+    height: 30px;
+    transition: 0.3s;
+}
+.window .right .form #confirmPassword{
+    display: none;
+}
+.window .right .form .input::placeholder{
+    color: #828282;
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+}
+.window .right .form .input:focus{
+    border: 1px solid #3949AB;
+    outline: 0;
+    /*box-shadow: 0px 3px 1px #3949AB;*/
+}
+.window .right .form .forgot{
+    display: flex;
+    justify-content: right;
+    width: 85%;
+    font-family: OpenSans-Regular;
+}
+.window .right .form a{
+    color: #6F74DD;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 12px;
+}
+.window .button{
+    border: 0;
+    height: 35px;
+    border-radius: 15px;
+    font-family: OpenSans-Regular;
+}
+.window .active{
+    background-color: #3949AB;
+    color: white;
+}
+.window .right .form .log-in{
+    width: 87%;
+    margin-top: 25px;
+}
+.window .right p{
+    color: #828282;
+    margin-top: 30px;
+    font-size: 13px;
+    font-family: OpenSans-Regular;
+}
+.window .not-active{
+    border: 1px solid #3949AB;
+    background-color: white;
+    color: #3949AB;
+}
+#3949AB
